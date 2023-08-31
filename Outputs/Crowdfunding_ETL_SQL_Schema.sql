@@ -11,7 +11,7 @@ CREATE TABLE "campaign" (
     "description" varchar   NOT NULL,
     "goal" float   NOT NULL,
     "pledged" float   NOT NULL,
-    "outcome" float   NOT NULL,
+    "outcome" varchar   NOT NULL,
     "backers_count" int   NOT NULL,
     "country" varchar   NOT NULL,
     "currency" varchar   NOT NULL,
@@ -61,11 +61,11 @@ REFERENCES "subcategory" ("subcategory_id");
 
 
 
-/*
+
 SELECT * FROM campaign;
 SELECT * FROM category;
 SELECT * FROM contacts;
 SELECT * FROM subcategory;
-*/
+
 
 
